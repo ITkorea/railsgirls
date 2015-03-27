@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'pages/info'
+  get 'pages/info'    # rails generate controller pages info입력후생성
 
-  root :to => redirect('/ideas')  #추가입력한것임
+  root :to => redirect('/ideas')  #추가입력한것임!!
   resources :ideas
 
   # The priority is based upon order of creation: first created -> highest priority.
